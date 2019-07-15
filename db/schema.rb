@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20190715090434) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "authors_books", id: false, force: :cascade do |t|
+  create_table "author_books", id: false, force: :cascade do |t|
     t.bigint "author_id", null: false
     t.bigint "book_id", null: false
   end
